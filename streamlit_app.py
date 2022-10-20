@@ -42,5 +42,6 @@ my_cur.execute("SELECT * FROM PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST")
 my_data_row = my_cur.fetchall()
 streamlit.text("The Fruit Load List Contains:")
 streamlit.text(my_data_row)
+add_my_fruit = fruit_choice
 streamlit.write("Thanks for Adding", add_my_fruit)
 my_cur.execute("INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
